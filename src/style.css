@@ -1,0 +1,157 @@
+div.container.wholePage{
+    background-image: linear-gradient(to left, #3ca59c 0%, #0b3330 100%);    
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 9px;
+  }
+  
+  form{
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #type-city{
+      width: 280px;
+      border: 1px solid none;
+      border-radius: 13px;
+      margin: auto;
+  }
+  
+  #type-city-search{
+    width: 62px;
+    border: 1px solid none;
+    border-radius: 13px;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
+  
+  input{
+      background-color: #ffffff;
+      border: 1px none #09212c;
+      color: black;
+      border-radius: 13px;
+      width: 280px;
+      height: 30px;
+      box-shadow: 0px 5px 8px #050505;
+      font-family: 'Muli', sans-serif;
+      font-weight: 600;
+      position: relative;
+  }
+  
+  .menuButton{
+    margin: 15px 3px 6px 6px;
+    display: inline;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+  }
+  
+  .language{
+    position: relative;
+    top: 0px;
+    right: -490px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+  }
+  .plusButton{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline;
+    background-color: transparent;
+  }
+  .fas.fa-cloud-sun{
+      font-size: 190px;
+      text-shadow: 2px 2px 9px #142422;
+      color: white;
+      position: relative;
+      right: 15px;
+      color: linear-gradient(to left, #3ca59c 0%, #0b3330 100%);
+      margin-right: 3px;
+  }
+  
+  .col-3{
+      color: whitesmoke;
+      font-family: 'Muli', sans-serif;
+      font-size: 16px;
+      text-align: left;
+      margin: 0px;
+      line-height: 25px;
+  }
+  
+  .currentLocation, .currentDateAndHour, .currentTemperature, .currentWeatherDescription, .currentDayMaxMin{
+    color: white;
+    font-family: 'Muli', sans-serif;
+    margin-right: 10px;
+    line-height: 27px;
+  }
+  
+  .currentLocation{
+    font-size: 17px;
+    display: inline;
+    font-weight: 600;
+  }
+  
+  .currentTemperature{
+    font-size: 55px;
+  }
+  
+  .currentWeatherDescription{
+    display: block;
+    font-size: 19px;
+    margin: 20px 0px 20px 0px;
+  }
+  
+  .currentDayMaxMin{
+    font-size: 19px;
+  }
+  
+  .nextFiveDays{
+    margin-bottom: 10px;
+    display: block;
+    color: #121b1b;
+    font-family: 'Muli', sans-serif;
+    font-size: 15px;
+  }
+  .col-sm{
+      padding: 3px 6px 2px 6px;
+      margin: 1px 2px;
+      text-align: center;
+      font-size: 14px;
+      border-radius: 6px;
+      border-right: 1px solid #316353;
+      transition: ease-in-out 220ms;
+      color: black;
+      font-family: 'Muli', sans-serif;
+      background-color: none;
+  }
+  
+  .fas.fa-cloud-sun{
+    font-size: 170px;
+    display: inline-block;
+    margin: auto;
+  }
+  .fas.fa-cloud-sun.sunday, .fas.fa-cloud-sun.monday, .fas.fas.fa-cloud-sun.tuesday, .fas.fa-smog, .fas.fas.fa-cloud-sun.thursday{
+    font-size: 18px;
+    right: 3px;
+    text-align: center;
+    margin: 5px auto 5px;
+    color: #09272b;
+    text-shadow: none;
+  }
+  .col-sm:hover{
+      background-color:#87cab5;
+      cursor: pointer;
+      box-shadow: 3px 3px 10px black;
+  }
+  .plusDays{
+      line-height: 100px;
+  }
+  
