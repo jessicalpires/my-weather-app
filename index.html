@@ -17,20 +17,21 @@
 <div class="container wholePage">
 </br> 
 </br>
-<div class="col-9">
-    <form id="search-form">
-    <input type="text" id="type-city" placeholder = " Type a city" autocomplete="off"/>
-    <input type="submit" id="type-city-search" value= "Search"/>
+  <form class="searchForm" id="search-form">
+    <div class="row">
+      <div class="col-10">
+        <input type="search" class="formControl" id="city-input" placeholder = " Type a city" autocomplete="off"/>
+      </div>
+      <div class="col-2">
+         <input type="submit" class="searchButton" id="type-city-search" value= "Search"/>
+      </div>
   </form>
 </div>
-
 </br>
 <hr>
-</br>
   <div class="container sideInfo">
     <div class="row">
       <div class="col-5">
-        <button class="plusButton"><i class="fas fa-plus"></i></button>
         <h6 class="currentLocation" id="city"><strong></strong></h6> 
         <p class="currentDateAndHour" id="current-date-hour">SAT | June 6, 11:36</p>
         <h1 class="currentTemperature" id="current-temperature"><strong>21</strong>
