@@ -18,7 +18,8 @@ currentDateAndHour.innerHTML = `${currentDay} | ${currentMonth} ${currentDate}, 
 
 
 function showTemperature(response) {
-    document.querySelector("#city").innerHTML = response.data.name;
+    let cityElement = document.querySelector("#city");
+    cityElement.innerHTML = response.data.name;
     let temperature = Math.round(response.data.main.temp);
     let temperatureElement = document.querySelector("#current-temperature");
     document.querySelector("#current-temperature").innerHTML=Math.round(response.data.main.temp);

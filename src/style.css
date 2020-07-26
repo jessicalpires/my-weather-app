@@ -97,6 +97,7 @@ div.container.wholePage{
     font-size: 17px;
     display: inline;
     font-weight: 600;
+    text-transform: capitalize;
   }
   
   .currentTemperature{
