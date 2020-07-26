@@ -1,7 +1,7 @@
 div.container.wholePage{
     background-image: linear-gradient(to left, #3ca59c 0%, #0b3330 100%);    
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0px auto;
     border-radius: 9px;
   }
   
@@ -101,6 +101,13 @@ div.container.wholePage{
   
   .currentTemperature{
     font-size: 55px;
+    line-height: 45px;
+  }
+
+  .currentTemperature .units{
+    position: relative;
+    font-size: 20px;
+    top: -25px;
   }
   
   .currentWeatherDescription{
@@ -134,9 +141,9 @@ div.container.wholePage{
   }
   
   .fas.fa-cloud-sun{
-    font-size: 170px;
+    font-size: 120px;
     display: inline-block;
-    margin: auto;
+    margin: 0 auto;
   }
   .fas.fa-cloud-sun.sunday, .fas.fa-cloud-sun.monday, .fas.fas.fa-cloud-sun.tuesday, .fas.fa-smog, .fas.fas.fa-cloud-sun.thursday{
     font-size: 18px;
