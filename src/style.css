@@ -1,6 +1,6 @@
 div.container.wholePage{
   background-image: linear-gradient(to left, #3ca59c 0%, #0b3330 100%);    
-  max-width: 510px;
+  max-width: 500px;
   margin: 0 auto;
   border-radius: 9px;
 }
