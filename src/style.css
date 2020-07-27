@@ -49,24 +49,6 @@ input{
   font-weight: 600;
 }
 
-.language{
-  position: relative;
-  top: 0px;
-  right: -490px;
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 14px;
-  font-family: 'Muli', sans-serif;
-  font-weight: 600;
-}
-.plusButton{
-  color: white;
-  border: 1px solid white;
-  border-radius: 50%;
-  display: inline;
-  background-color: transparent;
-}
 .fas.fa-cloud-sun{
     font-size: 190px;
     text-shadow: 2px 2px 9px #142422;
@@ -97,26 +79,29 @@ input{
   font-size: 17px;
   display: inline;
   font-weight: 600;
+  padding-bottom:35px;
 }
 
 .currentTemperature{
   font-size: 55px;
+  padding-top: 20px;
 }
 
 .currentWeatherDescription{
   display: block;
   font-size: 19px;
   margin: 20px 0px 20px 0px;
+  text-transform: capitalize;
 }
 
 .currentDayMaxMin{
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .nextFiveDays{
   margin-bottom: 10px;
   display: block;
-  color: #121b1b;
+  color: #f1fcfc;
   font-family: 'Muli', sans-serif;
   font-size: 15px;
 }
