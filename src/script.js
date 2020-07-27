@@ -16,7 +16,6 @@ let currentDateAndHour = document.querySelector(".currentDateAndHour");
 
 currentDateAndHour.innerHTML = `${currentDay} | ${currentMonth} ${currentDate}, ${currentHour}:${currentMinutes}`;
 
-
 function showTemperature(response) {
     document.querySelector("#city").innerHTML = response.data.name;
     let temperature = Math.round(response.data.main.temp);
@@ -29,15 +28,8 @@ function showTemperature(response) {
     document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("#current-day-max-temp").innerHTML = Math.round(response.data.main.temp_max);
     document.querySelector("#current-day-min-temp").innerHTML = Math.round(response.data.main.temp_min);
-}
-
-function displayForecast(response){
-   let forecastElement = document.querySelector("#forecast");
-   let forecast = response.data.list[0];
-   forecastElement.innerHTML = `
-   <div class="col-sm">
-   <span><strong>SUN</strong> <br> June 7 <br> <span><i class="fas fa-cloud-sun sunday"></i></span> <br><strong>${Math.round(forecast.main.temp_max)}ºC</strong>${Math.round(forecast.main.temp_min)}ºC</span>
- </div> `
+    let icon = document.querySelector("#icon");
+    icon.innerHTML= `http://openweathermap.org/img/${response.data.weather[0].icon}@2x.png`;
 }
 
 function handleSubmit (event){

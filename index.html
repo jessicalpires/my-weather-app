@@ -6,6 +6,7 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/script.js">
+    <link rel="stylesheet" href="src/media/">
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a0c2e1d489.js" crossorigin="anonymous"></script>
@@ -17,37 +18,34 @@
   </br>
 </br>
 <div class="col-9">
-    <form id="search-form">
-    <input type="text" id="type-city" placeholder = " Type a city" autocomplete="off"/>
-    <input type="submit" id="type-city-search" value= "Search"/>
+  <form id="search-form">
+  <input type="text" id="type-city" placeholder = " Type a city" autocomplete="off"/>
+  <input type="submit" id="type-city-search" value= "Search"/>
   </form>
 </div>
 </br>
 <hr>
-</br>
-</br>
   <div class="container sideInfo">
     <div class="row">
-      <div class="col-4">
+      <div class="col-5">
         <h6 class="currentLocation" id="city"><strong>Lisbon, Portugal</strong></h6> 
         <p class="currentDateAndHour">SAT | June 6, 11:36</p>
         <h1 class="currentTemperature" id="current-temperature"><strong>21ºC</strong></h1>
         <h6 class="currentWeatherDescription" id= "current-weather-description">Partly cloudy</h6>
         <p class="currentDayMaxMin"><strong><span id="current-day-max-temp">24</span> ºC | </strong><span id="current-day-min-temp">13</span>ºC</p>
       </div>
-      <div class="col-5">
-          <img src="" id="icon"></i> 
-      </div>
       <div class="col-3">
+        <img src="file:///C:/Users/Admin/Downloads/undraw_weather_app_i5sm%20(1).svg" alt="icon" class="icon">
+      </div>
+      <div class="col-4">
         <br/>
         <ul style="list-style-type: none;">
-          <li><strong>Wind</strong></br><span id="wind">0</span> km/h</li>
+          <li class="wind"><strong>Wind</strong></br><span id="wind">0</span> km/h</li>
           <br/>
-          <li><strong>Humidity</strong></br><span id="humidity">49</span>%</li>
+          <li  class="humidity"><strong>Humidity</strong></br><span id="humidity">49</span>%</li>
         </ul>
       </div>
   </div>
-</br>
 </br>
 </div>
 </div>

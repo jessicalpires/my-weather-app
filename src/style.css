@@ -1,6 +1,6 @@
 div.container.wholePage{
   background-image: linear-gradient(to left, #3ca59c 0%, #0b3330 100%);    
-  max-width: 600px;
+  max-width: 510px;
   margin: 0 auto;
   border-radius: 9px;
 }
@@ -8,6 +8,7 @@ div.container.wholePage{
 form{
   display: block;
   margin: 0 auto;
+  width: 500px;
 }
 
 #type-city{
@@ -25,6 +26,12 @@ form{
   background-color: #ffffff;
 }
 
+.icon{
+  block-size: 130px;
+  position: relative;
+  margin-left: -25px;
+}
+
 input{
     background-color: #ffffff;
     border: 1px none #09212c;
@@ -39,23 +46,14 @@ input{
 }
 
 
-.fas.fa-cloud-sun{
-    font-size: 190px;
-    text-shadow: 2px 2px 9px #142422;
-    color: white;
-    position: relative;
-    right: 15px;
-    color: linear-gradient(to left, #3ca59c 0%, #0b3330 100%);
-    margin-right: 3px;
-}
-
-.col-3{
+.col-4{
     color: whitesmoke;
     font-family: 'Muli', sans-serif;
     font-size: 16px;
     text-align: left;
-    margin: 0px;
+    margin: 0 auto;
     line-height: 25px;
+    position: relative;
 }
 
 .currentLocation, .currentDateAndHour, .currentTemperature, .currentWeatherDescription, .currentDayMaxMin{
@@ -88,46 +86,9 @@ input{
   font-size: 18px;
 }
 
-.nextFiveDays{
-  margin-bottom: 10px;
-  display: block;
-  color: #f1fcfc;
-  font-family: 'Muli', sans-serif;
-  font-size: 15px;
-}
-.col-sm{
-    padding: 3px 6px 2px 6px;
-    margin: 1px 2px;
-    text-align: center;
-    font-size: 14px;
-    border-radius: 6px;
-    border-right: 1px solid #316353;
-    transition: ease-in-out 220ms;
-    color: black;
-    font-family: 'Muli', sans-serif;
-    background-color: none;
-}
-
-.fas.fa-cloud-sun{
-  font-size: 170px;
-  display: inline-block;
-  margin: auto;
-}
-.fas.fa-cloud-sun.sunday, .fas.fa-cloud-sun.monday, .fas.fas.fa-cloud-sun.tuesday, .fas.fa-smog, .fas.fas.fa-cloud-sun.thursday{
-  font-size: 18px;
-  right: 3px;
-  text-align: center;
-  margin: 5px auto 5px;
-  color: #09272b;
-  text-shadow: none;
-}
-.col-sm:hover{
-    background-color:#87cab5;
-    cursor: initial;
-    box-shadow: 3px 3px 10px black;
-}
-.plusDays{
-    line-height: 100px;
+img{
+  margin-left: 45px;
+  block-size: 128px;
 }
 
 .repositoryLink{
