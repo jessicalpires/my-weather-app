@@ -31,6 +31,14 @@ function showTemperature(response) {
     document.querySelector("#current-day-min-temp").innerHTML = Math.round(response.data.main.temp_min);
 }
 
+function displayForecast(response){
+   let forecastElement = document.querySelector("#forecast");
+   let forecast = response.data.list[0];
+   forecastElement.innerHTML = `
+   <div class="col-sm">
+   <span><strong>SUN</strong> <br> June 7 <br> <span><i class="fas fa-cloud-sun sunday"></i></span> <br><strong>${Math.round(forecast.main.temp_max)}ºC</strong>${Math.round(forecast.main.temp_min)}ºC</span>
+ </div> `
+}
 
 function handleSubmit (event){
     event.preventDefault();
@@ -38,7 +46,9 @@ function handleSubmit (event){
     let city = document.querySelector("#type-city").value;
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
-
+    
+    apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayForecast);
 };
 
 let form = document.querySelector("#search-form");

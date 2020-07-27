@@ -133,7 +133,7 @@ input{
 }
 .col-sm:hover{
     background-color:#87cab5;
-    cursor: pointer;
+    cursor: initial;
     box-shadow: 3px 3px 10px black;
 }
 .plusDays{
